@@ -78,12 +78,18 @@ div.apresentation h3 {
 
 div.apresentation p {
     font-weight: 300;
+    text-align: left;
 }
 
 img.img-perfil {
     border-radius: 50%;
     border: 4px solid var(--white-df);
     box-shadow: 4px 4px 15px 3px rgba(0,0,0,0.5);
+}
+
+/* Estilos da seção motivações */
+section#motivations p {
+    text-align: justify;
 }
 
 /* Estilos da seção tecnologias */
