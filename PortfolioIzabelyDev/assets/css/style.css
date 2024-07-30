@@ -78,7 +78,6 @@ div.apresentation h3 {
 
 div.apresentation p {
     font-weight: 300;
-    text-align: left;
 }
 
 img.img-perfil {
@@ -87,9 +86,13 @@ img.img-perfil {
     box-shadow: 4px 4px 15px 3px rgba(0,0,0,0.5);
 }
 
-/* Estilos da seção motivações */
+div.apresentation p,
 section#motivations p {
     text-align: justify;
+}
+
+section#motivations p {
+    text-indent: 50px;
 }
 
 /* Estilos da seção tecnologias */
