@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+:root {
+    --black-df: #000000; 
+    --red-df: #e53939;
+    --dark-red: #b92424;
+    --white-df: #ffffff;
+    --light-white: #ffffff69;
+}

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body, html {
+    width: 100dvw;
+    height: 100dvh;
+    background: var(--white-df);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100dvh;
+}
+
+header, section#projects {
+    position: relative;
+    width: 100dvw;
+    background: var(--red-df);
+    overflow: hidden;
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    padding: 12% 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    width: 90%;
+    margin: 2vh auto;
+}
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background: var(--white-df);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > span > a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--black-df);
+    transition: 0.5s;
+    border-bottom: 2px solid transparent;
+}
+
+footer > span > a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid var(--dark-red);
+}

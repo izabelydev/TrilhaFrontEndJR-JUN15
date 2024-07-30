@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/* Estilos do menu */
+span.menu-icon {
+    font-size: 1rem;
+    margin-top: 20px;
+    margin-left: 90%;
+}
+
+span.arrow-back {
+    top: 2%;
+    left: 5%;
+    font-size: 1.2rem;
+}
+
+nav.navbar {
+    width: 30%;
+    margin-left: 70%;
+}
+
+/* Estilos da seção inicial apresentação */
+div.apresentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+h1,
+div.apresentation h1,
+section#motivations h1 {
+    font-size: 1rem;
+}
+
+div.apresentation h3 {
+    font-size: 0.7rem;
+    font-weight: 500;
+    margin-bottom: 5%;
+}
+
+div.apresentation p {
+    font-size: 0.6rem;
+    margin-left: -15%;
+    margin-right: 20%;
+}
+
+img.img-perfil {
+    width: 40%;
+}
+
+/* Estilos da seção objetivo */
+section#motivations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#motivations h1 {
+    grid-column: span 2;
+}
+
+section#motivations h1,
+section#motivations p {
+    margin: 2% 8%;
+}
+
+/* Estilos da seção tecnologias */
+video {
+    width: 50%;
+    margin-top: 4%;
+}
+
+section#technology {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+section#technology .first-content,
+section#technology .fourth-content {
+    grid-column: span 2;
+}
+
+div.container-resume {
+    width: 85vw;
+    height: 90vh;
+}
+
+/* Estilos da seção projetos */
+div.project {
+    grid-template-columns: 28% 71%;
+}
+
+/* Media Queries */
+@media (min-width: 575.98px) {
+    span.menu-icon {
+        margin-left: 87%;
+        font-size: 1.5rem;
+    }
+
+    h1,
+    div.apresentation h1,
+    nav.navbar h1,
+    section#motivations h1,
+    section#certificates h1 {
+        font-size: 1.2rem;
+    }
+    
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 1rem;
+    }
+
+    p,
+    div.apresentation p,
+    li.navbar-item a,
+    section#motivations p,
+    div.projects-container p {
+        font-size: 0.9rem;
+    }
+
+    span.close a {
+        width: 5%;
+    }
+
+    div.projects {
+        width: 80%;
+    }
+
+    a.title-project {
+        font-size: 1.2rem;
+    }
+
+    p.description-project {
+        font-size: 1rem;
+    }
+ }
+
+@media (min-width: 767.98px) {
+    span.menu-icon {
+        margin-left: 90%;
+        font-size: 1.7rem;
+    }
+
+    h1,
+    div.apresentation h1,
+    nav.navbar h1,
+    section#motivations h1,
+    section#certificates h1,
+    section#projects h1 {
+        font-size: 1.5rem;
+    }
+    
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 1.2rem;
+    }
+
+    p,
+    div.apresentation p,
+    li.navbar-item a,
+    section#motivations p,
+    div.projects-container p {
+        font-size: 1rem;
+    }
+
+    span.close a {
+        width: 4%;
+    }
+
+    video,
+    .content-container h3 {
+        width: 60%;
+        margin-bottom: 2%;
+    }
+
+    div.projects {
+        width: 50%;
+    }
+ }
+
+@media (min-width: 991.98px) {
+    span.menu-icon {
+        margin-left: 93%;
+        font-size: 2rem;
+    }
+
+    h1,
+    div.apresentation h1,
+    nav.navbar h1,
+    section#motivations h1,
+    section#certificates h1,
+    section#projects h1 {
+        font-size: 1.8rem;
+    }
+    
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 1.4rem;
+    }
+
+    p,
+    div.apresentation p,
+    li.navbar-item a,
+    section#motivations p,
+    div.projects-container p {
+        font-size: 1.3rem;
+    }
+
+    span.close a {
+        font-size: 1rem;
+        width: 3%;
+        padding: .8% 0;
+    }
+
+    div.projects {
+        width: 40%;
+    }
+ }
+
+@media (min-width: 1399.98px) {
+    span.menu-icon {
+        margin-left: 93%;
+        font-size: 3rem;
+    }
+
+    h1,
+    div.apresentation h1,
+    nav.navbar h1,
+    section#motivations h1,
+    section#certificates h1,
+    section#projects h1 {
+        font-size: 2.8rem;
+    }
+    
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 2.2rem;
+    }
+    
+    p,
+    div.apresentation p,
+    li.navbar-item a,
+    section#motivations p,
+    div.projects-container p {
+        font-size: 1.6rem;
+    }
+
+    img.img-perfil {
+        width: 40%;
+    }
+
+    span.close a {
+        font-size: 1rem;
+        width: 2%;
+        padding: .5% 0;
+    }
+
+    video,
+    .content-container h3 {
+        width: 70%;
+        margin-bottom: 2%;
+    }
+
+    div.projects {
+        width: 30%;
+    }
+ }

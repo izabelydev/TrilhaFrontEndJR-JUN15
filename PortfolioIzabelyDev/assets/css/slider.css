@@ -1,0 +1,88 @@
+div.slider {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+div.slides {
+    width: 400%;
+    margin-top: 5%;
+    margin-bottom: 18%;
+    display: flex;
+}
+
+div.slides input {
+    display: none;
+}
+
+div.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+div.slide img {
+    width: 100%;
+}
+
+label.manual-btn:not(:last-child),
+div.navigation-auto div:not(:last-child) {
+    margin-right: 20px;
+}
+
+label.manual-btn:hover,
+input#radio1:checked~div.navigation-auto .auto-btn1,
+input#radio2:checked~div.navigation-auto .auto-btn2,
+input#radio3:checked~div.navigation-auto .auto-btn3,
+input#radio4:checked~div.navigation-auto .auto-btn4 {
+    background: var(--red-df);
+}
+
+input#radio1:checked~.first {
+    margin-left: 0;
+}
+
+input#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+input#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+input#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+div.manual-navigation,
+div.navigation-auto {
+    position: absolute;
+    bottom: 5%;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+label.manual-btn,
+div.navigation-auto div {
+    border: 2px solid var(--red-df);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+
+/* LANDSCAPE - PAISAGEM */
+@media screen and (orientation: landscape) {
+    div.slider {
+        width: 40%;
+    }
+}

@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+/* Estilos do menu */
+span.menu-icon {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 83%;
+}
+
+span.arrow-back {
+    top: 2%;
+    left: 5%;
+}
+
+nav.navbar {
+    width: 55%;
+    height: 100dvh;
+    margin-left: 45%;
+}
+
+/* Estilos da seção inicial apresentação */
+div.apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.apresentation h1,
+section#motivations h1 {
+    font-size: 1.8rem;
+}
+
+div.apresentation h3 {
+    font-size: 1.2rem;
+}
+
+div.apresentation p {
+    margin: 0 10%;
+}
+
+img.img-perfil {
+    width: 40%;
+}
+
+/* Estilos da seção objetivo */
+section#motivations {
+    display: flex;
+    flex-direction: column;
+}
+
+section#motivations h1,
+section#motivations p {
+    margin: 5% 8%;
+}
+
+/* Estilos da seção tecnologias */
+video {
+    width: 80%;
+    margin-top: 4%;
+}
+
+section#technology,
+section#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+div.container-resume {
+    width: 85vw;
+    height: 50vh;
+}
+
+
+/* Estilos seção projetos */
+div.projects {
+    width: 98%;
+}
+
+div.project {
+    grid-template-columns: 28% 69%;
+}
+
+p.description-project {
+    font-size: .7rem;
+}
+
+/* Media Queries */
+@media (min-width: 575.98px) {
+    img.img-perfil {
+        width: 30%;
+    }
+
+    div.apresentation p {
+        margin: 0 12%;
+    }
+
+    span.close a {
+        width: 5%;
+    }
+
+    div.projects {
+        width: 80%;
+    }
+}
+
+@media (min-width: 767.98px) {
+    span.menu-icon {
+        margin-left: 87%;
+        font-size: 3rem;
+    }
+
+    h1,
+    div.apresentation h1,
+    nav.navbar h1,
+    section#motivations h1,
+    section#certificates h1,
+    section#projects h1 {
+        font-size: 2.5rem;
+    }
+
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 1.8rem;
+    }
+
+    div.apresentation p,
+    section#motivations p,
+    section#certificates p {
+        font-size: 1.6em;
+        margin: 2% 18%;
+    }
+
+    p {
+        font-size: 1.6em;
+        margin: 0;
+    }
+
+    li.navbar-item a {
+        font-size: 1.6em;
+    }
+
+    span.close a {
+        width: 4%;
+    }
+
+    video {
+        width: 70%;
+        margin-bottom: 2%;
+    }
+
+    div.projects {
+        width: 80%;
+    }
+}
+
+@media (min-width: 991.98px) {
+    span.menu-icon {
+        margin-left: 90%;
+        font-size: 4rem;
+    }
+
+    img.img-perfil {
+        width: 25%;
+    }
+
+    nav.navbar {
+        width: 45%;
+        margin-left: 55%;
+    }
+
+    h1,
+    div.apresentation h1,
+    nav.navbar h1,
+    section#motivations h1,
+    section#certificates h1,
+    section#projects h1 {
+        font-size: 2.8rem;
+    }
+
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 2rem;
+    }
+
+    p,
+    div.apresentation p,
+    li.navbar-item a,
+    section#motivations p,
+    section#certificates p,
+    div.projects-container p {
+        font-size: 1.8em;
+    }
+
+    span.close a {
+        font-size: 1rem;
+        width: 3%;
+        padding: .8% 0;
+    }
+
+    video,
+    .content-container h3 {
+        width: 60%;
+        margin-bottom: 2%;
+    }
+
+    div.projects {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1399.98px) {
+    span.menu-icon {
+        margin-left: 93%;
+        font-size: 5rem;
+    }
+
+    img.img-perfil {
+        width: 25%;
+    }
+
+    h1,
+    div.apresentation h1,
+    nav.navbar h1,
+    section#motivations h1,
+    section#certificates h1,
+    section#projects h1 {
+        font-size: 3.8rem;
+    }
+
+    div.apresentation h3,
+    span.arrow-back {
+        font-size: 3rem;
+    }
+
+    p,
+    div.apresentation p,
+    li.navbar-item a,
+    section#motivations p,
+    section#certificates p,
+    div.projects-container p {
+        font-size: 2.8em;
+    }
+
+    span.close a {
+        font-size: 1rem;
+        width: 2%;
+        padding: .5% 0;
+    }
+
+    video,
+    .content-container h3 {
+        width: 50%;
+        margin-bottom: 2%;
+    }
+}
