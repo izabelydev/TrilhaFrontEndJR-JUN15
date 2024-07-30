@@ -10,7 +10,6 @@ body, html {
     height: 100dvh;
     background: var(--white-df);
     overflow-x: hidden;
-    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
