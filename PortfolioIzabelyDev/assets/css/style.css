@@ -128,8 +128,8 @@ ul.list-tech > li > img {
 input.btn-open-box-video {
     color: var(--white-df);
     font-size: 1.1em;
-    width: 90%;
-    padding: 1% 0;
+    width: auto;
+    padding: 1.5% 3%;
     background: var(--red-df);
     border-radius: 10px;
     border: 1px solid var(--dark-red);
@@ -200,10 +200,9 @@ div.content-container {
     justify-content: center;
 }
 
-/* Estilos da seção certificados */
-section#certificates h1,
-section#certificates p {
-    margin: 5% 15%;
+/* Estilos da seção certificados (o restante está no arquivo slider.css) */
+section#certificates > p {
+    margin: 0 10%;
 }
 
 /* Estilos da seção projetos */
@@ -288,6 +287,14 @@ img.linkedin-lg {
 }
 
 /* Estilos da caixa gostos pessoais */
+div.btn-personal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
 div.personal-tastes {
     margin: 5% auto;
     display: grid;

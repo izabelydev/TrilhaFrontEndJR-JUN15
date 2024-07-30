@@ -22,23 +22,21 @@ for (let i = 0; i < a.length; i++) {
 
 for (let i =0; i < openBoxVideo.length; i++) {
     openBoxVideo[i].addEventListener('click', event => {
-        insertBoxData(event);
+        const e = event.target;
+        if(e.classList.contains('video')) {
+            openVideo();
+        } else if (e.classList.contains('personal')) {
+            openPersonal();
+        }
     });
 }
 
-function insertBoxData(event) {
-    const e = event.target;
-    if(e.classList.contains('video')) {
-        openVideo();
-    } else if (e.classList.contains('personal')) {
-        openPersonal();
-    }
-
-}
-
 function openVideo() {
-    tech.innerHTML += `
-    <div class="wrapper-resume off" style="backdrop-filter: blur(5px);">
+    const wrapperResume = document.createElement('div');
+    wrapperResume.classList.add('wrapper-resume', 'off');
+    wrapperResume.style.backdropFilter = 'blur(5px)';
+
+    wrapperResume.innerHTML = `
         <div class="container-resume">
             <span class="close"><a>X</a></span>
             <div class="content-container">
@@ -47,11 +45,13 @@ function openVideo() {
                     <source src="./assets/video/tecnologias.mp4" type="video/mp4">
                 </video>
             </div>
-        </div>
-    </div>`;
+        </div>`;
+
+    tech.appendChild(wrapperResume);
 
     animationBox();
 }
+
 
 function openPersonal() {
     tech.innerHTML += `
